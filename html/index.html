@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <h1>My Notes</h1>
+            <button id="themeBtn">Dark Mode</button>
+        </header>
+
+        <!-- Add / Edit form -->
+        <div class="form">
+            <input type="text" id="title" placeholder="Title">
+            <textarea id="content" rows="4" placeholder="Write your note here..."></textarea>
+
+            <label for="colour">Colour tag: </label>
+            <select id="colour">
+                <option value="yellow">Yellow</option>
+                <option value="pink">Pink</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+            </select>
+
+            <button id="saveBtn">Add Note</button>
+          <button id="cancelBtn" class="hidden">Cancel</button>
+    
+        </div>
+
+        <!-- Search -->
+        <input type="text" id="search" placeholder="Search notes...">
+
+        <!-- Notes are shown here -->
+        <div id="notesList"></div>
+
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
